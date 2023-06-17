@@ -4,8 +4,8 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 # loading the saved model
-loaded_model = pickle.load(open(r'T:/Project_file/Model_Kmeans_new','rb'))
-df=pd.read_csv("T:/Project_file/Cluster_world_Development_data.csv")
+loaded_model = pickle.load(open(r'world_model.pkl','rb'))
+df=pd.read_excel("World_development_mesurement.xlsx")
 def Cluster_prediction(input_data):
     
 
